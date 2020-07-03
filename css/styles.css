@@ -676,25 +676,25 @@ footer {
   position: absolute;
   top: 4px;
   left: 0px;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--title-color);
   border-radius: 2px;
-  fill: none;
   transition: fill var(--transition-fuction),
-    background var(--transition-fuction);
+    background var(--transition-fuction) ? border var(var(--transition-fuction));
 }
 .modal-check > input:checked + .checkbox-icon {
   fill: var(--white-color);
   background: var(--main-color);
+  border: 1px solid var(--main-color);
 }
 .modal-check > a {
   text-decoration: underline;
   color: var(--main-color);
 }
-/* .is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 .is-hidden .modal-group {
-  transform: scale(0.2); */
+  transform: scale(0.2);
 }

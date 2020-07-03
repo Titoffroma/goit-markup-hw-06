@@ -52,7 +52,7 @@
       <section>
         <div class="mainimage">
           <h1>эффективные решения для вашего бизнеса</h1>
-          <button>
+          <button data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -327,11 +327,11 @@
           </ul>
         </div>
       </section>
-      <div class="backdrop is-hidden">
+      <div class="backdrop is-hidden" data-modal>
         <form action="" method="get">
           <div role="group" class="modal-group">
             <div class="close-button-div">
-              <a href="/index.html" class="close-button">
+              <a href="/index.html" class="close-button" data-modal-close>
                 <svg class="close-icon">
                   <use href="./img/sprite.svg#close-icon"></use>
                 </svg>
@@ -458,5 +458,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
