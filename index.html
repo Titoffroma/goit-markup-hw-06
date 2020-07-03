@@ -327,6 +327,62 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden">
+        <form action="" method="get">
+          <div role="group" class="modal-group">
+            <div class="close-button-div">
+              <a href="/index.html" class="close-button">
+                <svg class="close-icon">
+                  <use href="./img/sprite.svg#close-icon"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="modal-header">
+              Оставьте свои данные, мы вам перезвоним
+            </p>
+            <label class="modal name">
+              <input name="modal-name" type="text" />
+              <svg class="modal-icon">
+                <use href="./img/sprite.svg#name-icon"></use>
+              </svg>
+              <span>Имя</span>
+            </label>
+            <label class="modal email">
+              <input name="modal-email" type="email" />
+              <svg class="modal-icon">
+                <use href="./img/sprite.svg#tel-icon"></use>
+              </svg>
+              <span>Телефон</span>
+            </label>
+            <label class="modal tel">
+              <input name="modal-tel" type="tel" />
+              <svg class="modal-icon">
+                <use href="./img/sprite.svg#email-icon"></use>
+              </svg>
+              <span>Почта</span>
+            </label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="26"
+              placeholder="Коментарий"
+            ></textarea>
+            <label class="modal-check"
+              ><input name="modal-check" type="checkbox" />
+              <svg class="checkbox-icon">
+                <use href="./img/sprite.svg#checkbox-icon"></use>
+              </svg>
+              <span>Соглашаюсь с рассылкой и принимаю </span
+              ><a href="">Условия договора</a></label
+            >
+            <button class="submit-button" type="submit">
+              <a>
+                <span>Отправить</span>
+              </a>
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
       <div class="container">
@@ -378,7 +434,7 @@
           </div>
           <div>
             <form action="" method="get">
-              <label class="footer-list-item" for="roma"
+              <label class="footer-list-item" for="mail-input"
                 >Подпишитесь на рассылку</label
               >
               <div class="input-group">
