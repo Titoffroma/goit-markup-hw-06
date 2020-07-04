@@ -551,7 +551,8 @@ footer {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: opacity var(--transition-fuction);
+  transition: var(--transition-fuction);
+  z-index: 100;
 }
 .modal-group {
   display: flex;
@@ -559,7 +560,6 @@ footer {
   align-items: center;
   width: 528px;
   height: 581px;
-  top: 222px;
   background: var(--white-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -571,9 +571,8 @@ footer {
   color: var(--text-color);
   padding: 40px;
   position: relative;
-  top: -50%;
   transform: scale(1);
-  transition: transform var(--transition-fuction);
+  transition: var(--transition-fuction);
 }
 .modal > span {
   position: absolute;
@@ -596,7 +595,7 @@ footer {
 .modal-group input:focus + .modal-icon {
   fill: var(--main-color);
 }
-.modal-group input:focus:not([type="checkbox"]) + svg + span {
+.modal-group input:focus:not([type="checkbox"]) ~ span {
   left: 16px;
   top: -20px;
   color: var(--main-color);
@@ -670,20 +669,26 @@ footer {
 .modal-check > input {
   opacity: 0;
 }
-.checkbox-icon {
+.pseudo-check:before {
+  content: "";
+  display: block;
+  position: absolute;
   width: 16px;
   height: 16px;
-  position: absolute;
   top: 4px;
   left: 0px;
   border: 1px solid var(--title-color);
   border-radius: 2px;
-  transition: fill var(--transition-fuction),
-    background var(--transition-fuction) ? border var(var(--transition-fuction));
+  transition: background var(--transition-fuction),
+    border var(--transition-fuction);
 }
-.modal-check > input:checked + .checkbox-icon {
-  fill: var(--white-color);
-  background: var(--main-color);
+.modal-check > input:checked ~ .pseudo-check:before {
+  background: var(--main-color) url("../img/checkbox-icon.svg") center no-repeat;
+  border: 1px solid var(--main-color);
+  background-size: contain;
+}
+.modal-check:hover .pseudo-check:before,
+.modal-check:focus-within .pseudo-check:before {
   border: 1px solid var(--main-color);
 }
 .modal-check > a {
@@ -694,7 +699,9 @@ footer {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: var(--transition-fuction);
 }
 .is-hidden .modal-group {
-  transform: scale(0.2);
+  transform: scale(0);
+  transition: var(--transition-fuction);
 }

@@ -12,6 +12,59 @@
     />
   </head>
   <body>
+    <div class="backdrop is-hidden" data-modal>
+      <form action="" method="get">
+        <div role="group" class="modal-group">
+          <div class="close-button-div">
+            <a href="" class="close-button" data-modal-close>
+              <svg class="close-icon">
+                <use href="./img/sprite.svg#close-icon"></use>
+              </svg>
+            </a>
+          </div>
+          <p class="modal-header">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <label class="modal name">
+            <input name="modal-name" type="text" />
+            <svg class="modal-icon">
+              <use href="./img/sprite.svg#name-icon"></use>
+            </svg>
+            <span>Имя</span>
+          </label>
+          <label class="modal email">
+            <input name="modal-email" type="email" />
+            <svg class="modal-icon">
+              <use href="./img/sprite.svg#tel-icon"></use>
+            </svg>
+            <span>Телефон</span>
+          </label>
+          <label class="modal tel">
+            <input name="modal-tel" type="tel" />
+            <svg class="modal-icon">
+              <use href="./img/sprite.svg#email-icon"></use>
+            </svg>
+            <span>Почта</span>
+          </label>
+          <textarea
+            name="comment"
+            id="comment"
+            rows="26"
+            placeholder="Коментарий"
+          ></textarea>
+          <label class="modal-check"
+            ><input name="modal-check" type="checkbox" />
+            <span class="pseudo-check">Соглашаюсь с рассылкой и принимаю </span
+            ><a href="">Условия договора</a></label
+          >
+          <button class="submit-button" type="submit">
+            <a>
+              <span>Отправить</span>
+            </a>
+          </button>
+        </div>
+      </form>
+    </div>
     <header>
       <div class="container">
         <a class="logo" href="./index.html">Web <span>Studio</span></a>
@@ -327,62 +380,6 @@
           </ul>
         </div>
       </section>
-      <div class="backdrop is-hidden" data-modal>
-        <form action="" method="get">
-          <div role="group" class="modal-group">
-            <div class="close-button-div">
-              <a href="" class="close-button" data-modal-close>
-                <svg class="close-icon">
-                  <use href="./img/sprite.svg#close-icon"></use>
-                </svg>
-              </a>
-            </div>
-            <p class="modal-header">
-              Оставьте свои данные, мы вам перезвоним
-            </p>
-            <label class="modal name">
-              <input name="modal-name" type="text" />
-              <svg class="modal-icon">
-                <use href="./img/sprite.svg#name-icon"></use>
-              </svg>
-              <span>Имя</span>
-            </label>
-            <label class="modal email">
-              <input name="modal-email" type="email" />
-              <svg class="modal-icon">
-                <use href="./img/sprite.svg#tel-icon"></use>
-              </svg>
-              <span>Телефон</span>
-            </label>
-            <label class="modal tel">
-              <input name="modal-tel" type="tel" />
-              <svg class="modal-icon">
-                <use href="./img/sprite.svg#email-icon"></use>
-              </svg>
-              <span>Почта</span>
-            </label>
-            <textarea
-              name="comment"
-              id="comment"
-              rows="26"
-              placeholder="Коментарий"
-            ></textarea>
-            <label class="modal-check"
-              ><input name="modal-check" type="checkbox" />
-              <svg class="checkbox-icon">
-                <use href="./img/sprite.svg#checkbox-icon"></use>
-              </svg>
-              <span>Соглашаюсь с рассылкой и принимаю </span
-              ><a href="">Условия договора</a></label
-            >
-            <button class="submit-button" type="submit">
-              <a>
-                <span>Отправить</span>
-              </a>
-            </button>
-          </div>
-        </form>
-      </div>
     </main>
     <footer>
       <div class="container">
