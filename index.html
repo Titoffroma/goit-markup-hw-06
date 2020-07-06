@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="backdrop is-hidden" data-modal>
-      <form action="" method="get">
+      <form method="get">
         <div role="group" class="modal-group">
           <div class="close-button-div">
             <a href="" class="close-button" data-modal-close>
@@ -32,35 +32,28 @@
             </svg>
             <span>Имя</span>
           </label>
-          <label class="modal email">
-            <input name="modal-email" type="email" />
+          <label class="modal tel">
+            <input name="modal-tel" type="tel" />
             <svg class="modal-icon">
               <use href="./img/sprite.svg#tel-icon"></use>
             </svg>
             <span>Телефон</span>
           </label>
-          <label class="modal tel">
-            <input name="modal-tel" type="tel" />
+          <label class="modal email">
+            <input name="modal-email" type="email" />
             <svg class="modal-icon">
               <use href="./img/sprite.svg#email-icon"></use>
             </svg>
             <span>Почта</span>
           </label>
-          <textarea
-            name="comment"
-            id="comment"
-            rows="26"
-            placeholder="Коментарий"
-          ></textarea>
+          <textarea name="comment" id="comment" rows="26">Коментарий</textarea>
           <label class="modal-check"
             ><input name="modal-check" type="checkbox" />
             <span class="pseudo-check">Соглашаюсь с рассылкой и принимаю </span
             ><a href="">Условия договора</a></label
           >
           <button class="submit-button" type="submit">
-            <a>
-              <span>Отправить</span>
-            </a>
+            <span>Отправить</span>
           </button>
         </div>
       </form>
@@ -430,7 +423,7 @@
             </ul>
           </div>
           <div>
-            <form action="" method="get">
+            <form method="get">
               <label class="footer-list-item" for="mail-input"
                 >Подпишитесь на рассылку</label
               >
@@ -438,16 +431,14 @@
                 <input
                   id="mail-input"
                   name="Emailinput"
-                  type="mail"
+                  type="email"
                   placeholder="E-mail"
                 />
                 <button class="submit-button" type="submit">
-                  <a>
-                    <span>Подписаться</span>
-                    <svg class="send-icon">
-                      <use href="./img/sprite.svg#icon-send"></use>
-                    </svg>
-                  </a>
+                  <span>Подписаться</span>
+                  <svg class="send-icon">
+                    <use href="./img/sprite.svg#icon-send"></use>
+                  </svg>
                 </button>
               </div>
             </form>
