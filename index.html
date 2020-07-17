@@ -22,11 +22,11 @@
               </svg>
             </a>
           </div>
-          <p class="modal-header">
+          <h2 class="modal-header">
             Оставьте свои данные, мы вам перезвоним
-          </p>
+          </h2>
           <label class="modal name">
-            <input name="modal-name" type="text" />
+            <input name="modal-name" type="text" autofocus />
             <svg class="modal-icon">
               <use href="./img/sprite.svg#name-icon"></use>
             </svg>
@@ -46,9 +46,12 @@
             </svg>
             <span>Почта</span>
           </label>
-          <textarea name="comment" id="comment" rows="26">Коментарий</textarea>
+          <label class="modal textarea">
+            <textarea name="comment" id="comment" rows="6"></textarea>
+            <span>Коментарий</span>
+          </label>
           <label class="modal-check"
-            ><input name="modal-check" type="checkbox" />
+            ><input name="modal-check" type="checkbox" required />
             <span class="pseudo-check">Соглашаюсь с рассылкой и принимаю </span
             ><a href="">Условия договора</a></label
           >
